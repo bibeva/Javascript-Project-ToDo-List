@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TODO List using Javascript</title>
+  <!-- using font awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- using google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <!-- importing reset and main css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <!-- todo block -->
+    <div class="todoBlock">
+      <!-- main title holder -->
+      <div class="titleHolder">
+        <h1>Javascript Todo List</h1>
+        <p>We use HTML, CSS and Javascript to build this app.</p>
+      </div>
+      <!-- todo block -->
+      <div class="todoList">
+        <!-- form holder -->
+        <div class="formHolder">
+          <div class="col big">
+            <input type="text">
+          </div>
+          <div class="col">
+            <button type="button" id="addItem" class="btn">Add Item</button>
+          </div>
+          <div class="col">
+            <button type="button" id="hideList" class="btn">Hide List</button>
+          </div>
+        </div>
+        <!-- todo list -->
+        <div class="listHolder">
+          <div class="list">
+              <div class="listName">Macbook</div>
+              <ul class="btnHolder">
+                <li><button class="btn2"><i class="fas fa-arrow-up"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-arrow-down"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-trash-alt"></i></button></li>
+              </ul>
+          </div>
+          <div class="list">
+              <div class="listName">Amazon Fire Stick</div>
+              <ul class="btnHolder">
+                <li><button class="btn2"><i class="fas fa-arrow-up"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-arrow-down"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-trash-alt"></i></button></li>
+              </ul>
+          </div>
+          <div class="list">
+              <div class="listName">Google Home</div>
+              <ul class="btnHolder">
+                <li><button class="btn2"><i class="fas fa-arrow-up"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-arrow-down"></i></button></li>
+                <li><button class="btn2"><i class="fas fa-trash-alt"></i></button></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- importing custom js -->
+  <script src="js/main.js"></script>
+</body>
+</html>

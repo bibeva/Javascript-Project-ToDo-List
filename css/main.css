@@ -2,6 +2,7 @@
 body {
   font: 300 18px/1.5 'Roboto', sans-serif;
   color: #333;
+  background: #f4f4f4;
 }
 
 .container {
@@ -26,6 +27,12 @@ input[type="text"] {
   background: #fff;
   padding: 15px;
   font: 300 18px/1.5 'Roboto', sans-serif;
+  transition: border 0.3s linear;
+}
+
+input[type="text"]:focus {
+  border-color: #19b5fe;
+  outline: none;
 }
 
 .btn {
@@ -39,17 +46,27 @@ input[type="text"] {
   color: #fff;
   cursor: pointer;
   font: 300 16px/1.5 'Roboto', sans-serif;
+  transition: background 0.3s linear;
+}
+
+.btn:hover {
+  background: #097fb7;
 }
 
 .btn2 {
   background: none;
   border: 1px solid #19b5fe;
-  padding: 5px 15px;
+  padding: 10px;
   display: inline-block;
   vertical-align: top;
   color: #19b5fe;
   cursor: pointer;
-  font: 300 16px/1.5 'Roboto', sans-serif;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+.btn2:hover {
+  background: #19b5fe;
+  color: #fff;
 }
 
 /* todo block */
@@ -100,7 +117,7 @@ input[type="text"] {
 }
 
 /* list holder */
-.listHolder .list {
+.listHolder li {
   counter-increment: step-counter;
   overflow: hidden;
   margin: 0 0 20px;
@@ -110,7 +127,7 @@ input[type="text"] {
 }
 
 /* custom list number */
-.listHolder .list:before {
+.listHolder li:before {
   content: counter(step-counter);
   background: #19b5fe;
   color: #fff;
@@ -127,12 +144,7 @@ input[type="text"] {
   padding: 0 10px 0 0;
 }
 
-.listHolder .btnHolder {
+.listHolder .btn2 {
   float: right;
-  padding: 0 0 0 10px;
-}
-
-.listHolder .btnHolder li {
-  float: left;
   margin: 0 0 0 10px;
 }

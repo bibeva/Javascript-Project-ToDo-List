@@ -69,6 +69,23 @@ input[type="text"]:focus {
   color: #fff;
 }
 
+.btn2:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.btn2.remove:before {
+  content: '\f2ed';
+}
+
+.btn2.down:before {
+  content: '\f063';
+}
+
+.btn2.up:before {
+  content: '\f062';
+}
+
 /* todo block */
 .todoBlock {
   padding: 30px 0;

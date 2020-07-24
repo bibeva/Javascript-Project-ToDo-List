@@ -61,17 +61,17 @@ const lis = listUl.children;
 function createBtn(li) {
   // create remove button
   const remove = document.createElement('button');
-  remove.className = 'btn2 remove';
+  remove.className = 'btn-icon remove';
   li.appendChild(remove);
 
   // create down button
   const down = document.createElement('button');
-  down.className = 'btn2 down';
+  down.className = 'btn-icon down';
   li.appendChild(down);
 
   // create up button
   const up = document.createElement('button');
-  up.className = 'btn2 up';
+  up.className = 'btn-icon up';
   li.appendChild(up);
 
   return li;
@@ -92,14 +92,14 @@ divList.addEventListener('click', (event) => {
     const button = event.target;
     const li = button.parentNode;
     const ul = li.parentNode;
-    if (button.className === 'btn2 remove') {
+    if (button.className === 'btn-icon remove') {
       ul.removeChild(li);
-    } else if (button.className === 'btn2 down') {
+    } else if (button.className === 'btn-icon down') {
       const nextLi = li.nextElementSibling;
       if (nextLi) {
         ul.insertBefore(nextLi, li);
       }
-    } else if (button.className === 'btn2 up') {
+    } else if (button.className === 'btn-icon up') {
       const prevLi = li.previousElementSibling;
       if (prevLi) {
         ul.insertBefore(li, prevLi);

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TODO List using Javascript</title>
+  <title>Javascript Project - To Do list</title>
   <!-- using font awesome for icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
@@ -18,43 +18,49 @@
 
 <body>
   <div class="container">
-    <!-- todo block -->
     <div class="todoBlock">
       <!-- main title holder -->
       <div class="titleHolder">
-        <h1>Javascript Todo List</h1>
-        <p>We use HTML, CSS and Javascript to build this app.</p>
+        <h1>To Do List</h1>
       </div>
-      <!-- todo block -->
+      <!-- todo list -->
       <div class="todoList">
+        <!-- list holder -->
+        <div class="listHolder">
+          <ul class="list">
+            <li>
+              <span class="listName">Macbook</span>
+              <!-- 
+              <button class="btn-icon remove"></button>
+              <button class="btn-icon down"></button>
+              <button class="btn-icon up"></button>
+              -->
+            </li>
+            <li>
+              <span class="listName">Amazon Firestick</span>
+            </li>
+            <li>
+              <span class="listName">Keyboard</span>
+            </li>
+            <li>
+              <span class="listName">Headphones</span>
+            </li>
+            <li>
+              <span class="listName">Airpods</span>
+            </li>
+          </ul>
+        </div>
         <!-- form holder -->
         <div class="formHolder">
           <div class="col big">
             <input type="text" id="addInput">
           </div>
           <div class="col">
-            <button type="button" id="addBtn" class="btn">Add Item</button>
+            <button type="button" id="addBtn" class="btn-primary">Add Item</button>
           </div>
           <div class="col">
-            <button type="button" id="toggleBtn" class="btn">Hide List</button>
+            <button type="button" id="toggleBtn" class="btn-primary">Hide List</button>
           </div>
-        </div>
-        <!-- todo list -->
-        <div class="listHolder">
-          <ul class="list">
-            <!-- looping li -->
-            <li>
-              <span class="listName">Macbook</span>
-              <!-- 
-              <button class="btn2 remove"></button>
-              <button class="btn2 down"></button>
-              <button class="btn2 up"></button>
-              -->
-            </li>
-            <li>
-              <span class="listName">Amazon Firestick</span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

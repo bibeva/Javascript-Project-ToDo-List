@@ -1,19 +1,22 @@
-/* general */
+/* 
+general 
+-------
+*/
 body {
-  font: 300 18px/1.5 'Roboto', sans-serif;
+  font: 300 16px/1.5 'Roboto', sans-serif;
   color: #333;
-  background: #f4f4f4;
+  background: #e3e9ff;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 640px;
   padding: 0 15px;
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 p {
@@ -22,134 +25,104 @@ p {
 
 input[type="text"] {
   width: 100%;
-  height: 50px;
+  height: 40px;
   border: 1px solid #ccc;
   background: #fff;
-  padding: 15px;
-  font: 300 18px/1.5 'Roboto', sans-serif;
+  padding: 10px;
+  font: 300 16px/1.5 'Roboto', sans-serif;
   transition: border 0.3s linear;
 }
 
 input[type="text"]:focus {
-  border-color: #19b5fe;
+  border-color: #4ac7be;
   outline: none;
 }
 
-.btn {
-  background: #19b5fe;
+.btn-primary {
+  background: #4ac7be;
   border: none;
   padding: 10px;
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  height: 50px;
+  height: 40px;
   color: #fff;
   cursor: pointer;
   font: 300 16px/1.5 'Roboto', sans-serif;
   transition: background 0.3s linear;
 }
 
-.btn:hover {
+.btn-primary:hover {
   background: #097fb7;
 }
 
-.btn2 {
+.btn-primary:focus {
+  outline: none;
+}
+
+.btn-icon {
   background: none;
-  border: 1px solid #19b5fe;
-  padding: 10px;
+  border: none;
   display: inline-block;
   vertical-align: top;
-  color: #19b5fe;
+  color: #333;
   cursor: pointer;
   transition: background 0.3s linear, color 0.3s linear;
 }
 
-.btn2:hover {
-  background: #19b5fe;
-  color: #fff;
+.btn-icon:focus {
+  outline: none;
 }
 
-.btn2:before {
+.btn-icon:before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
-.btn2.remove:before {
+.btn-icon.remove:before {
   content: '\f2ed';
 }
 
-.btn2.down:before {
+.btn-icon.down:before {
   content: '\f063';
 }
 
-.btn2.up:before {
+.btn-icon.up:before {
   content: '\f062';
 }
 
-/* todo block */
+/* 
+todo block 
+----------
+*/
 .todoBlock {
-  padding: 30px 0;
+  padding: 30px;
+  margin: 30px 0;
+  background: #fff;
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
 }
 
 .todoBlock .titleHolder {
-  margin: 0 0 40px;
+  margin: 0 0 30px;
 }
 
-.todoBlock h1 {
-  margin: 0 0 5px;
-}
-
-/* form holder */
-.formHolder {
-  padding: 25px 0;
-  margin: 0 -10px 40px;
-  overflow: hidden;
-  position: relative;
-}
-
-.formHolder:before,
-.formHolder:after {
-  content: '';
-  background: #ccc;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  right: 10px;
-}
-
-.formHolder:after {
-  top: auto;
-  bottom: 0;
-}
-
-.formHolder .col {
-  float: left;
-  width: 20%;
-  padding: 0 10px;
-}
-
-.formHolder .col.big {
-  width: 60%;
-}
-
-/* list holder */
+/* 
+list holder
+-----------
+*/
 .listHolder li {
   counter-increment: step-counter;
   overflow: hidden;
-  margin: 0 0 20px;
-  padding: 0 0 20px 40px;
+  padding: 0 0 20px 30px;
   position: relative;
-  border-bottom: 1px dashed #ccc;
 }
 
-/* custom list number */
 .listHolder li:before {
   content: counter(step-counter);
-  background: #19b5fe;
+  background: #4ac7be;
   color: #fff;
   font-size: 14px;
-  padding: 2px 8px;
+  padding: 0px 6px;
   border-radius: 3px;
   position: absolute;
   top: 0;
@@ -158,10 +131,29 @@ input[type="text"]:focus {
 
 .listHolder .listName {
   float: left;
-  padding: 0 10px 0 0;
 }
 
-.listHolder .btn2 {
+.listHolder .btn-icon {
   float: right;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
+}
+
+/* 
+form holder
+-----------
+*/
+.formHolder {
+  margin: 0 -5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.formHolder .col {
+  float: left;
+  width: 20%;
+  padding: 0 5px;
+}
+
+.formHolder .col.big {
+  width: 60%;
 }

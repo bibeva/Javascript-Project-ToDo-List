@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Project - To Do list</title>
+  <!-- using font awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- using google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <!-- importing reset and main css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="todoBlock">
+      <!-- main title holder -->
+      <div class="titleHolder">
+        <h1>To Do List</h1>
+      </div>
+      <!-- todo list -->
+      <div class="todoList">
+        <!-- list holder -->
+        <div class="listHolder">
+          <ul class="list">
+            <li>
+              <span class="listName">Macbook</span>
+              <!-- 
+              <button class="btn-icon remove"></button>
+              <button class="btn-icon down"></button>
+              <button class="btn-icon up"></button>
+              -->
+            </li>
+            <li>
+              <span class="listName">Amazon Firestick</span>
+            </li>
+            <li>
+              <span class="listName">Keyboard</span>
+            </li>
+            <li>
+              <span class="listName">Headphones</span>
+            </li>
+            <li>
+              <span class="listName">Airpods</span>
+            </li>
+          </ul>
+        </div>
+        <!-- form holder -->
+        <div class="formHolder">
+          <div class="col big">
+            <input type="text" id="addInput">
+          </div>
+          <div class="col">
+            <button type="button" id="addBtn" class="btn-primary">Add Item</button>
+          </div>
+          <div class="col">
+            <button type="button" id="toggleBtn" class="btn-primary">Hide List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- importing custom js -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

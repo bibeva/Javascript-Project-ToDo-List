@@ -1,6 +1,6 @@
 /* 
 1. show / hide button 
--------------------------------------------------------------
+---------------------
 */
 // create variables
 const toggleBtn = document.querySelector('#toggleBtn');
@@ -19,7 +19,7 @@ toggleBtn.addEventListener('click', () => {
 
 /* 
 2. add list items
--------------------------------------------------------------
+-----------------
 */
 // create variables
 const addInput = document.querySelector('#addInput');
@@ -52,7 +52,7 @@ addInput.addEventListener('keyup', (event) => {
 
 /* 
 3. create action buttons
--------------------------------------------------------------
+------------------------
 */
 // create variables
 const listUl = document.querySelector('.list');
@@ -85,7 +85,7 @@ for (var i = 0; i < lis.length; i++) {
 
 /* 
 4. enabling button actions (to move item up, down or delete)
--------------------------------------------------------------
+------------------------------------------------------------
 */
 divList.addEventListener('click', (event) => {
   if (event.target.tagName === 'BUTTON') {
